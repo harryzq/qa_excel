@@ -105,6 +105,12 @@ table{
 		        alert('复制成功');
           }
         })
+
+        $(document).keyup(function(event){
+          if(event.keyCode ==13){
+            $("#search-button").trigger("click");
+          }
+        });
     }
     $(document).ready(function () {
       event_register()
